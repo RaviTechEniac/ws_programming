@@ -15,6 +15,7 @@ class CreateSiteSettingsTable extends Migration
     {
         Schema::create('site_settings', function (Blueprint $table) {
             $table->id();
+            $table->string('user_id');
             $table->enum('socket_connection',['open','close'])->default('close');
             $table->timestamps();
         });
