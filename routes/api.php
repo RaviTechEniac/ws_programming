@@ -37,9 +37,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
      Route::group(['prefix'=>'staff'], function(){
 
-               Route::get('/show',[StaffController::class,'show']);
-
-               Route::post('/store',[StaffController::class,'store']);
+          Route::get('/show',[StaffController::class,'show']);
+          Route::post('/store',[StaffController::class,'store']);
 
      });
 
