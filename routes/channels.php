@@ -17,5 +17,5 @@ use Illuminate\Support\Facades\Broadcast;
 //     return (int) $user->id === (int) $id;
 // });
 
-Broadcast::channel('we_one')->middleware('auth:sanctum');
+// Broadcast::channel('we_one')->middleware('auth:sanctum');
 
